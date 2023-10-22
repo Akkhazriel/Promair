@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Landing page
+        link(rel="stylesheet", href="css/main.css")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        script(defer, src="./js/index.bundle.js")
+    body
+
+        .wrapper
+            include blocks/header
+            main.main
+                .main__container
+                    include blocks/main/menu
+                    .main__content
+                        include blocks/main/filter
+
+            include blocks/footer

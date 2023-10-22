@@ -1,0 +1,237 @@
+.filter
+    &__wrapper
+        display: flex
+        flex-direction: column
+    
+.filter__form
+    display: flex
+    column-gap: 20px
+    align-items: center
+    .filter__form-search
+        position: relative
+        width: 438px
+        height: 46px
+        display: flex
+        align-items: center
+        background: #F6F6F6
+        border-radius: 6px
+        input
+            position: absolute
+            left: 20px
+            &::placeholder
+                color: #9D9D9D
+                font-size: 16px
+                font-weight: 400
+        button
+            position: absolute
+            right: 20px
+    .filter__form-buttonCall
+        max-width: 255px
+        padding: 14px 62px
+        background-color: #6AB8EE
+        border-radius: 6px
+        color: #FFF
+        font-weight: 500
+    .filter__form-buttonCart
+        padding: 12px 22px
+        max-width: 72px
+        background-color: #F6F6F6
+        border-radius: 6px
+        .buttoncard-img
+            position: relative
+            span
+                position: absolute
+                font-size: 10px
+                top: -10px
+                left: 10px
+                color: #FFF
+                background: #6AB8EE
+                padding: 5px 8px
+                border-radius: 50%
+
+.filter__banner
+    margin-top: 12px
+    max-width: 805px
+    background: url('./../img/filter/banner.jpg')
+    padding: 40px 37px 20px 40px
+    border-radius: 6px
+    display: flex
+    column-gap: 23px
+    .filter__banner-caption
+        display: flex
+        flex-direction: column
+        h1
+            font-size: 40px
+            font-weight: 700
+            color: #FFF
+        p
+            font-size: 20px
+            font-weight: 400
+            max-width: 327px
+            color: #FFF
+            margin-top: 10px
+        .filter__caption-btn
+            max-width: 184px
+            margin-top: 27px
+            padding: 14px 22px 14px 16px
+            color: #FFF
+            background: rgba(255, 255, 255, 0.103)
+            position: relative
+            display: flex
+            align-items: center
+            font-size: 14px
+            &::after
+                content: ''
+                position: absolute
+                background-image: url('./../img/filter/arrow.svg')
+                width: 16px
+                height: 8px
+                right: 16px
+    .filter__banner-content
+        display: flex
+        flex-direction: column
+        text-align: center
+        align-items: center
+        .filter__content-desc
+            font-size: 14px
+            color: #FFF
+
+.filter__panel
+    margin-top: 30px
+    max-width: 805px
+    display: flex
+    flex-direction: column
+    
+.panel__nav
+    display: flex
+    align-items: center
+    .panel__nav-item
+        width: 184px
+        font-size: 16px
+        font-weight: 400
+        padding: 15px 0
+        text-align: center
+        border: 1px solid #DADADA
+        color: #02131F
+        transition: .3s linear
+        &:hover
+            transition: .3s linear
+            background: #6AB8EE
+            color: #FFF
+        &:last-child
+            width: 265px
+            padding: 15px 0
+            text-align: center
+            font-weight: 400
+        
+.panel__result
+    display: flex
+    padding-top: 20px
+    border: 1px solid #DADADA
+    border-top: none
+    padding-bottom: 20px
+
+    .result__producer
+        display: flex
+        flex-direction: column
+        row-gap: 12px
+        margin-right: 50px
+        margin-left: 19px
+        h3
+            font-size: 14px
+            color: #02131F
+            font-weight: 500
+        .producer-item
+            display: flex
+            input
+                position: absolute
+                z-index: -1
+                opacity: 0
+            input+label
+                display: inline-flex
+                align-items: center
+                user-select: none
+                &::before
+                    content: ''
+                    display: inline-block
+                    width: 1em
+                    height: 1em
+                    flex-shrink: 0
+                    flex-grow: 0
+                    border: 1px solid #DADADA
+                    border-radius: 0.25em
+                    margin-right: 0.5em
+                    background-repeat: no-repeat
+                    background-position: center center
+                    background-size: 50% 50%
+            input:checked+label
+                &::before
+                    border-color: #6AB8EE
+                    background-color: #6AB8EE
+                    background-image: url('./../img/filter/check.svg')
+            label
+                font-size: 14px
+                color: rgba(2, 19, 31, 0.6)
+    .result__settings
+        .settings__form
+            display: flex
+            flex-direction: column
+            row-gap: 14px
+            .settings__form-range
+                display: flex
+                flex-direction: column
+                row-gap: 10px
+                .range-title
+                    font-size: 14px
+                    font-weight: 500
+                    color: #02131F
+                .range-inputs
+                    max-width: 196px
+                    display: flex
+                    column-gap: 8px
+                    input
+                        max-width: 90px
+                        text-align: center
+                        font-size: 12px
+                        font-weight: 400
+                        background: #F6F6F6
+                        border-radius: 6px
+                        padding: 9px 25px
+                        &:last-child
+                            padding: 9px 13px
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button
+                        -webkit-appearance: none
+    .result__advanced
+        margin-left: 92px
+        display: flex
+        flex-direction: column
+        row-gap: 14px
+        .advanced__form-price
+            display: flex
+            flex-direction: column
+            row-gap: 12px
+            .form__price-title
+                font-size: 14px
+                font-weight: 500
+                color: #02131F
+            .form__price-inputs
+                display: flex
+                column-gap: 26px
+                .form__price-input
+                    background-color: #F6F6F6
+                    text-align: center
+                    font-size: 12px
+                    color: #02131f93
+                    padding: 9px 13px
+                    border-radius: 6px
+        .result__submit
+            background: transparent
+            border: 1px solid #9d9d9d
+            text-align: center
+            padding: 15px 0
+            border-radius: 6px
+            font-size: 14px
+            font-weight: 400
+            color: #02131F
+        

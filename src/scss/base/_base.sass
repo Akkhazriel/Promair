@@ -1,0 +1,104 @@
+html 
+    scroll-behavior: smooth
+
+body 
+    display: flex
+    justify-content: center
+    font-family: var(--main-font)
+
+html, body
+    height: 100%
+
+
+[class*="__container"] 
+    max-width: 1118px
+    padding: 0 15px
+    margin: 0 auto
+
+.wrapper
+    max-width: 1280px
+    min-height: 100%
+
+    display: flex
+    flex-direction: column
+    
+.main
+    margin-top: 12px
+
+.main__container
+    display: flex
+    column-gap: 20px
+
+.main__content
+    flex: 1 1 100%
+
+// dropmenu
+
+.select-title
+    font-size: 14px
+    font-weight: 500
+    color: #02131F
+.select
+    position: relative 
+    width: 255px
+    &.active .select__body
+        transform: rotate(0)
+        transition: .3s linear
+    .select__header
+        margin-top: 10px
+        display: flex
+        padding: 11px 14px
+        cursor: pointer
+        border: 1px solid #DADADA
+        border-radius: 6px 6px 0 0
+        font-size: 14px
+        color: rgba(2, 19, 31, 0.6)
+    .select__body
+        display: block
+        transform-origin: 0 0
+        transform: rotateX(90deg)
+        position: absolute
+        left: 0
+        right: 0
+        top: 100%
+        background:#FFFFFF
+        border: 1px solid #DADADA
+        border-radius: 0 0 6px 6px
+        transition: .3s linear
+        z-index: 5
+        .select__body-item
+            font-size: 14px
+            font-weight: 400
+            color: rgba(2, 19, 31, 0.6)
+            padding: 11px 14px
+            cursor: pointer
+            transition: .3s linear
+            &:hover
+                color: rgba(2, 19, 31)
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+
+// Переопределяем стили для noUiSlider по макету
+.noUi-target
+    background: #F6F6F6!important
+    border: none!important
+    border-radius: 100px!important
+    height: 10px!important
+    left: 10px
+    width: 245px
+.noUi-connect
+    background: #6AB8EE!important
+.noUi-handle::after,
+.noUi-handle::before
+    display: none!important
+
+.noUi-handle
+    width: 16px!important
+    height: 16px!important
+    border-radius: 100%!important
+    background-color: #FFFFFF!important
+    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.24)!important
+    right: -5px!important
+    top: -3px!important

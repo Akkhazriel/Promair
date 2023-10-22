@@ -1,0 +1,131 @@
+section.filter
+    .filter__wrapper 
+        form.filter__form
+            .filter__form-search
+                input(type="text" placeholder="Поиск").filter__search-input
+                button
+                    img(src="./img/filter/search.svg", alt="search").filter__search-icon
+            button.filter__form-buttonCall Заказать звонок
+            button.filter__form-buttonCart 
+                .buttoncard-img
+                    img(src="./img/filter/cart.svg", alt="cart")
+                    span.current-value 7 
+        .filter__banner
+            .filter__banner-caption
+                h1 Продажа компрессоров по ценам производителя
+                p 14 лет на рынке компрессорного оборудования
+                a(href="#").filter__caption-btn Перейти в каталог 
+            .filter__banner-content
+                .filter__content-img
+                    img(src="./img/filter/compressor.png", alt="compressor")
+                p.filter__content-desc Поршневой компрессор REMEZA СБ4/С-24.OLD15
+        .filter__panel
+            .panel__nav
+                a(href="#").panel__nav-item Компрессоры 
+                a(href="#").panel__nav-item Осушители 
+                a(href="#").panel__nav-item Рессиверы 
+                a(href="#").panel__nav-item Пескоструйные аппараты 
+            .panel__result
+                .result__producer
+                    h3.producer__title Производитель
+                    .producer-item
+                        input(type="checkbox" id="checkbox_current-1").result__producer-checkbox
+                        label(for="checkbox_current-1") Abac #[span (542)]
+                    .producer-item
+                        input(type="checkbox" id="checkbox_current-2").result__producer-checkbox
+                        label(for="checkbox_current-2") Berg #[span (642)]
+                    .producer-item
+                        input(type="checkbox" id="checkbox_current-3").result__producer-checkbox
+                        label(for="checkbox_current-3") Dali #[span (815)]
+                    .producer-item
+                        input(type="checkbox" id="checkbox_current-4").result__producer-checkbox
+                        label(for="checkbox_current-4") Ekomak #[span (411)]
+                    .producer-item
+                        input(type="checkbox" id="checkbox_current-5").result__producer-checkbox
+                        label(for="checkbox_current-5") MARK #[span (37)]
+                    .producer-item
+                        input(type="checkbox" id="checkbox_current-6").result__producer-checkbox
+                        label(for="checkbox_current-6") Abac #[span (542)]
+                    .producer-item
+                        input(type="checkbox" id="checkbox_current-7").result__producer-checkbox
+                        label(for="checkbox_current-7") Berg #[span (542)]
+                    .producer-item
+                        input(type="checkbox" id="checkbox_current-8").result__producer-checkbox
+                        label(for="checkbox_current-8") Dali #[span (542)]
+                    .producer-item
+                        input(type="checkbox" id="checkbox_current-9").result__producer-checkbox
+                        label(for="checkbox_current-9") Ekomak #[span (542)]
+                    .producer-item
+                        input(type="checkbox" id="checkbox_current-10").result__producer-checkbox
+                        label(for="checkbox_current-10") MARK #[span (542)]
+                    .producer-item
+                        input(type="checkbox" id="checkbox_current-11").result__producer-checkbox
+                        label(for="checkbox_current-11") Abac #[span (542)]
+                    .producer-item
+                        input(type="checkbox" id="checkbox_current-12").result__producer-checkbox
+                        label(for="checkbox_current-12") Ekomak #[span (542)]
+                .result__settings
+                    .settings__form
+                        .settings__form-compressortype--select.select
+                            h3.select-title Вид компрессора
+                            span.select__header Все
+                            .select__body
+                                .select__body-item Компрессор
+                                .select__body-item Компрессор
+                                .select__body-item Компрессор
+                        .settings__form-range(data-range-performance)
+                            .range-title Производительность, л/мин
+                            .range-inputs
+                                input(type="number" placeholder="От 1").form__range-input
+                                | -
+                                input(type="number" placeholder="До 9200").form__range-input
+                        .settings__form-range(data-range-bar)
+                            .range-title Давление, бар
+                            .range-inputs
+                                input(type="number" placeholder="От 1.5").form__range-input
+                                | -
+                                input(type="number" placeholder="До 40").form__range-input
+                        .settings__form-enginetype--select.select
+                            h3.select-title Тип двигателя
+                            span.select__header Все
+                            .select__body
+                                .select__body-item Двигатель
+                                .select__body-item Двигатель
+                                .select__body-item Двигатель
+                        .settings__form-range(data-range-power)
+                            .range-title Мощность, кВт
+                            .range-inputs
+                                input(settings="number" placeholder="От 1.5").form__range-input
+                                | -
+                                input(settings="number" placeholder="До 40").form__range-input
+                .result__advanced
+                    .advanced__form-voltage--select.select
+                        h3.select-title Рабочее напряжение
+                        span.select__header Все
+                        .select__body
+                            .select__body-item Напряжение
+                            .select__body-item Напряжение
+                            .select__body-item Напряжение
+                    .advanced__form-reciver--select.select
+                        h3.select-title Тип ресивера
+                        span.select__header Все
+                        .select__body
+                            .select__body-item Ресивер
+                            .select__body-item Ресивер
+                            .select__body-item Ресивер
+                    .advanced__form-enginemark--select.select
+                        h3.select-title Марка двигателя
+                        span.select__header Все
+                        .select__body
+                            .select__body-item Марка
+                            .select__body-item Марка
+                            .select__body-item Марка
+                    .advanced__form-price
+                        h3.form__price-title Цена, руб.
+                        .form__price-inputs
+                            label.form__price-label
+                                input(type="number" placeholder="От" min="500" max="999999").form__price-input#input-0
+                            label.form__price-label
+                                input(type="number" placeholder="До" min="500" max="999999").form__price-input#input-1
+                        .form__price-slider
+                    button.result__submit Подобрать #[span 3648]

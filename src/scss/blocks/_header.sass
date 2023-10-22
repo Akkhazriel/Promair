@@ -1,0 +1,51 @@
+// Media
+.header
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    &__wrapper
+        padding: 23px 0
+        display: flex
+        align-items: center
+        column-gap: 30px
+
+.header__top-nav
+    .nav__list
+        display: flex
+        column-gap: 30px
+        align-items: center
+        .nav__link
+            font-size: 14px
+            font-weight: 400
+            color: #02131F
+            &:hover
+                font-weight: 600
+
+.header__top-contacts
+    display: flex
+    column-gap: 30px
+    align-items: center
+    a
+        font-size: 14px
+        font-weight: 400
+        color: #02131F
+        padding-left: 25px
+        position: relative
+        display: flex
+        align-items: center
+        &:hover
+            font-weight: 600
+    a[data-contacts-map]
+        &::before
+            content: ''
+            position: absolute
+            background-image: url('./../img/header/map.svg')
+            width: 13px
+            height: 17px
+            left: 0
+    a[data-contacts-number]
+        &::before
+            content: ''
+            position: absolute
+            background-image: url('./../img/header/phone.svg')
+            width: 17px
+            height: 17px
+            left: 0
